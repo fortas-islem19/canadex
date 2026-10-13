@@ -1,7 +1,7 @@
 import { OFFICE_SCHEDULE, type Availability } from '@canadex/shared';
 import request from 'supertest';
 import { beforeEach, describe, expect, it } from 'vitest';
-import { createApp } from '../src/app';
+import { createApp } from '../src/createApp';
 import { BookingService } from '../src/bookings/service';
 import { SqliteBookingRepository } from '../src/bookings/sqliteRepository';
 import { openDatabase } from '../src/db/sqlite';

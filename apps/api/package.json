@@ -5,9 +5,9 @@
   "description": "Canadex booking API: availability, appointments and the office back-office endpoints.",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch src/main.ts",
     "build": "tsup",
-    "start": "node dist/index.js",
+    "start": "node dist/main.js",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json"
   },

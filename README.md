@@ -79,14 +79,14 @@ wizard keeps working: it computes the agenda locally and sends the request over 
 
 ## Configuration (`apps/api/.env`)
 
-| Variable             | Default           | Notes                                                          |
-| -------------------- | ----------------- | -------------------------------------------------------------- |
-| `PORT`               | `4000`            |                                                                |
-| `DATABASE_PATH`      | `data/canadex.db` | SQLite file, relative to `apps/api`                            |
-| `ADMIN_TOKEN`        | _(empty)_         | 16+ characters; empty disables `/admin`                        |
-| `CORS_ORIGIN`        | _(empty)_         | Comma-separated origins, only if the site is on another domain |
-| `TRUST_PROXY`        | `0`               | Number of reverse proxies (e.g. `1` behind Nginx)              |
-| `NOTIFY_WEBHOOK_URL` | _(empty)_         | Receives every new booking as JSON (Slack, Make, Zapier, n8n…) |
+| Variable             | Default           | Notes                                                             |
+| -------------------- | ----------------- | ----------------------------------------------------------------- |
+| `PORT`               | `4000`            |                                                                   |
+| `DATABASE_PATH`      | `data/canadex.db` | SQLite file, relative to `apps/api` (`/tmp/canadex.db` on Vercel) |
+| `ADMIN_TOKEN`        | _(empty)_         | 16+ characters; empty disables `/admin`                           |
+| `CORS_ORIGIN`        | _(empty)_         | Comma-separated origins, only if the site is on another domain    |
+| `TRUST_PROXY`        | `0`               | Number of reverse proxies (e.g. `1` behind Nginx; `1` on Vercel)  |
+| `NOTIFY_WEBHOOK_URL` | _(empty)_         | Receives every new booking as JSON (Slack, Make, Zapier, n8n…)    |
 
 The website reads `VITE_API_URL` at build time when the API lives on a different domain.
 
@@ -101,6 +101,26 @@ ADMIN_TOKEN=… NODE_ENV=production npm start   # behind Nginx/Caddy for HTTPS, 
 
 Keep `apps/api/data/` on persistent storage and back it up — it contains clients' personal data and is
 git-ignored on purpose.
+
+### Vercel
+
+`vercel.json` deploys the repository as one Vercel project with two services on one domain:
+
+| Service | Folder     | Public path     | What it is                                                 |
+| ------- | ---------- | --------------- | ---------------------------------------------------------- |
+| `api`   | `apps/api` | `/api/*`        | Express app, run as a function (entrypoint `src/index.ts`) |
+| `web`   | `apps/web` | everything else | Static Vite build; `/admin` is served `index.html`         |
+
+The browser calls the API on the same origin (`/api/...`), so no service binding or `VITE_API_URL` is
+needed. Set `ADMIN_TOKEN` (and optionally `NOTIFY_WEBHOOK_URL`) in the Vercel project's environment
+variables, then test locally with `vercel dev` after `vercel link`.
+
+**Storage warning:** Vercel functions can only write to `/tmp`, which is per instance and wiped on cold
+starts, so SQLite there does not keep bookings. Use a hosted database (implement `BookingRepository`)
+before taking real appointments on Vercel.
+
+`src/index.ts` is the serverless entrypoint (default export); `src/main.ts` is the long-running server
+used by `npm run dev` and `npm start`.
 
 ## Growing the system
 
