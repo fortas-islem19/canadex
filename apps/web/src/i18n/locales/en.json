@@ -21,6 +21,9 @@
     "book": "Book an appointment",
     "bookShort": "Book"
   },
+  "intro": {
+    "skip": "Skip intro"
+  },
   "hero": {
     "eyebrow": "Canadian visa consulting office · Algeria",
     "titleLead": "Your index to",

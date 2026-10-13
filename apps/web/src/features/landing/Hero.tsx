@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import { Button, ButtonLink } from '../../components/Button';
 import { AlgeriaFlag, CanadaFlag, MapleLeaf } from '../../components/Flags';
 import { Icon } from '../../components/Icon';
@@ -6,6 +7,9 @@ import { openDaysRange, openHoursRange } from '../../lib/format';
 import { useBookingIntent } from '../booking/bookingIntentContext';
 import { BoardingPass } from './BoardingPass';
 import styles from './Hero.module.css';
+
+/** Stagger index for the entrance animation. */
+const step = (index: number) => ({ '--step': index }) as CSSProperties;
 
 export function Hero() {
   const { t, intlLocale } = useLocale();
@@ -20,7 +24,7 @@ export function Hero() {
 
       <div className={`container ${styles.layout}`}>
         <div className={styles.copy}>
-          <p className={styles.eyebrow}>
+          <p className={`${styles.eyebrow} ${styles.enter}`} style={step(0)}>
             <span className={styles.flags}>
               <AlgeriaFlag className={styles.flag} />
               <CanadaFlag className={styles.flag} />
@@ -28,13 +32,18 @@ export function Hero() {
             {t('hero.eyebrow')}
           </p>
 
-          <h1 id="hero-title" className={styles.title}>
-            {t('hero.titleLead')} <span className={styles.accent}>{t('hero.titleAccent')}</span>
+          <h1 id="hero-title" className={`${styles.title} ${styles.enter}`} style={step(1)}>
+            {t('hero.titleLead')}{' '}
+            <span className={`${styles.accent} ${styles.enter}`} style={step(3)}>
+              {t('hero.titleAccent')}
+            </span>
           </h1>
 
-          <p className={styles.lead}>{t('hero.lead')}</p>
+          <p className={`${styles.lead} ${styles.enter}`} style={step(3)}>
+            {t('hero.lead')}
+          </p>
 
-          <div className={styles.ctas}>
+          <div className={`${styles.ctas} ${styles.enter}`} style={step(4)}>
             <Button size="lg" arrow onClick={() => requestBooking()}>
               {t('hero.ctaPrimary')}
             </Button>
@@ -43,7 +52,7 @@ export function Hero() {
             </ButtonLink>
           </div>
 
-          <ul className={styles.trust}>
+          <ul className={`${styles.trust} ${styles.enter}`} style={step(5)}>
             <li>
               <Icon name="sparkle" size={18} />
               {t('hero.trustServices')}
@@ -59,7 +68,7 @@ export function Hero() {
           </ul>
         </div>
 
-        <div className={styles.visual}>
+        <div className={`${styles.visual} ${styles.enterPass}`}>
           <BoardingPass />
         </div>
       </div>

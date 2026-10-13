@@ -9,6 +9,7 @@ import { Footer } from './Footer';
 import { Header } from './Header';
 import { Hero } from './Hero';
 import { HowItWorks } from './HowItWorks';
+import { IntroSplash } from './IntroSplash';
 import { MobileBookBar } from './MobileBookBar';
 import { Services } from './Services';
 import { useLocale } from '../../i18n/useLocale';
@@ -17,6 +18,7 @@ export default function LandingPage() {
   const { t } = useLocale();
   return (
     <BookingIntentProvider>
+      <IntroSplash />
       <a href="#main" className="skip-link">
         {t('common.skip')}
       </a>

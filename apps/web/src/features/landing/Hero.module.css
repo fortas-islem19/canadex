@@ -85,6 +85,7 @@
 
 .accent {
   position: relative;
+  display: inline-block;
   color: var(--red-600);
   white-space: nowrap;
 }
@@ -98,6 +99,12 @@
   border-radius: 999px;
   background: var(--red-100);
   z-index: -1;
+  transform-origin: var(--underline-origin, left);
+  animation: underline 0.7s var(--ease-out) 1s both;
+}
+
+:global([dir='rtl']) .accent::after {
+  --underline-origin: right;
 }
 
 .lead {
@@ -139,6 +146,63 @@
 .visual {
   display: flex;
   justify-content: center;
+}
+
+/* ---- Entrance: plays on load, or as soon as the intro curtain starts lifting. ---- */
+
+.enter {
+  animation: rise 0.9s var(--ease-out) both;
+  animation-delay: calc(var(--step, 0) * 90ms + 120ms);
+}
+
+.enterPass {
+  --from-x: 70px;
+  animation: passIn 1.1s var(--ease-out) 0.35s both;
+}
+
+:global([dir='rtl']) .enterPass {
+  --from-x: -70px;
+}
+
+.leaf {
+  animation: leafIn 1.6s var(--ease-out) 0.2s both;
+}
+
+:global(:root[data-intro='playing']) :is(.enter, .enterPass, .leaf) {
+  animation-play-state: paused;
+}
+
+:global(:root[data-intro='playing']) .accent::after {
+  animation-play-state: paused;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    translate: 0 28px;
+    filter: blur(6px);
+  }
+}
+
+@keyframes passIn {
+  from {
+    opacity: 0;
+    transform: translateX(var(--from-x)) rotate(6deg) scale(0.94);
+  }
+}
+
+@keyframes leafIn {
+  from {
+    opacity: 0;
+    rotate: -20deg;
+    scale: 0.7;
+  }
+}
+
+@keyframes underline {
+  from {
+    transform: scaleX(0);
+  }
 }
 
 @media (max-width: 960px) {
