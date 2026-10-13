@@ -1,0 +1,70 @@
+.header {
+  max-width: 720px;
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.center .kicker {
+  justify-content: center;
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--red-600);
+}
+
+:global(:root[lang='ar']) .kicker {
+  font-family: var(--font-body);
+  letter-spacing: 0;
+  font-size: 15px;
+}
+
+.number {
+  font-family: var(--font-mono);
+  color: var(--navy-900);
+}
+
+.rule {
+  width: 28px;
+  height: 2px;
+  background: currentColor;
+}
+
+.title {
+  font-size: clamp(30px, 4.4vw, 48px);
+  font-weight: 800;
+}
+
+.lead {
+  margin-top: 16px;
+  font-size: clamp(16px, 1.6vw, 18px);
+  color: var(--muted);
+}
+
+.dark .title {
+  color: #fff;
+}
+
+.dark .number {
+  color: #fff;
+}
+
+.dark .kicker {
+  color: var(--red-500);
+}
+
+.dark .lead {
+  color: rgb(255 255 255 / 0.72);
+}

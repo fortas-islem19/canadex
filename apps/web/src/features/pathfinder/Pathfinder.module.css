@@ -1,0 +1,230 @@
+.section {
+  padding-bottom: clamp(72px, 10vw, 128px);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: clamp(28px, 4vw, 48px);
+  background:
+    radial-gradient(circle at 100% 0%, rgb(227 38 47 / 0.35), transparent 45%),
+    linear-gradient(160deg, var(--navy-800), var(--navy-950));
+  color: #fff;
+}
+
+.intro header {
+  margin-bottom: 0;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.progress li {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.18);
+  color: transparent;
+  transition:
+    background 0.3s,
+    width 0.3s var(--ease-out);
+}
+
+.progress li:last-child {
+  width: 22px;
+  height: 22px;
+}
+
+.doneDot {
+  background: rgb(255 255 255 / 0.85) !important;
+}
+
+.currentDot {
+  width: 44px !important;
+  background: var(--red-500) !important;
+  color: #fff !important;
+}
+
+.progress li:last-child.currentDot {
+  width: 22px !important;
+}
+
+.panel {
+  padding: clamp(28px, 4vw, 48px);
+  outline: none;
+}
+
+.question,
+.result {
+  animation: enter 0.45s var(--ease-out);
+}
+
+.counter {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red-600);
+}
+
+:global(:root[lang='ar']) .counter {
+  font-family: var(--font-body);
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.label {
+  margin: 8px 0 24px;
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 800;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 20px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--navy-900);
+  text-align: start;
+  transition:
+    border-color 0.2s,
+    background 0.2s,
+    translate 0.2s var(--ease-out);
+}
+
+.option svg {
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.option:hover,
+.option[aria-pressed='true'] {
+  border-color: var(--red-600);
+  background: var(--red-50);
+  translate: 0 -1px;
+}
+
+.option:hover svg {
+  color: var(--red-600);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  padding: 6px 0;
+  border: 0;
+  background: none;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.back:hover {
+  color: var(--navy-900);
+}
+
+.resultLead {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.resultService {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0 24px;
+}
+
+.resultService h3 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 800;
+}
+
+.resultIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--red-600);
+  color: #fff;
+}
+
+.tips {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.tips li {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: var(--blue-50);
+  color: var(--ink-2);
+  font-size: 15px;
+}
+
+.tips svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--blue-700);
+}
+
+.resultActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    translate: 0 12px;
+  }
+}
+
+@media (max-width: 860px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}

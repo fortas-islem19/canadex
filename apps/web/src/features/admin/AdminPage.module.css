@@ -1,0 +1,260 @@
+.page {
+  min-height: 100vh;
+  padding-bottom: 64px;
+}
+
+.header {
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.headerInner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+  padding-block: 16px;
+}
+
+.brand {
+  display: flex;
+}
+
+.subtitle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-inline-start: auto;
+}
+
+.login {
+  display: grid;
+  gap: 12px;
+  max-width: 380px;
+  margin: 64px auto;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  color: var(--navy-900);
+}
+
+.login label {
+  font-weight: 700;
+}
+
+.login input {
+  height: 48px;
+  padding: 0 14px;
+  border: 1.5px solid var(--line-strong);
+  border-radius: 12px;
+}
+
+.back {
+  justify-self: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.error {
+  color: var(--red-700);
+  font-weight: 600;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  display: grid;
+  gap: 4px;
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.stat span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.stat strong {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: var(--navy-900);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.toolbar select,
+.date input {
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 240px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: none;
+}
+
+.date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.notice {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: #fff7e6;
+  color: #7a4b00;
+  font-weight: 600;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th {
+  padding: 12px 14px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: start;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.table td > * {
+  display: block;
+}
+
+.table td span,
+.table td a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.table tr[data-status='cancelled'] td {
+  opacity: 0.5;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+.notes {
+  max-width: 260px;
+  color: var(--ink-2);
+  white-space: pre-line;
+}
+
+.status {
+  height: 34px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.status[data-status='new'] {
+  background: #fff7e6;
+  color: #7a4b00;
+}
+
+.status[data-status='confirmed'] {
+  background: var(--blue-50);
+  color: var(--blue-700);
+}
+
+.status[data-status='completed'] {
+  background: var(--green-100);
+  color: var(--green-700);
+}
+
+.status[data-status='cancelled'],
+.status[data-status='no_show'] {
+  background: var(--red-50);
+  color: var(--red-700);
+}
+
+.empty {
+  padding: 40px;
+  text-align: center;
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

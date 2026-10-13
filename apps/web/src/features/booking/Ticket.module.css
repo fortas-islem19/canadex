@@ -1,0 +1,171 @@
+.ticket {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+
+.band {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: var(--navy-900);
+  color: #fff;
+}
+
+.leaf {
+  width: 20px;
+  height: 20px;
+  color: var(--red-500);
+}
+
+.title {
+  flex: 1;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.status {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.12);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.booked .status {
+  background: var(--green-700);
+}
+
+.rows {
+  display: grid;
+  margin: 0;
+  padding: 6px 18px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.row:last-child {
+  border-bottom: 0;
+}
+
+.row dt {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 2px;
+}
+
+:global(:root[lang='ar']) .row dt {
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.row dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: end;
+  color: var(--navy-900);
+  animation: fill 0.4s var(--ease-out);
+}
+
+.empty {
+  color: var(--line-strong) !important;
+}
+
+.stub {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border-top: 2px dashed var(--line-strong);
+  background: var(--paper);
+}
+
+.stub::before,
+.stub::after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--blue-50);
+}
+
+.stub::before {
+  left: -11px;
+}
+
+.stub::after {
+  right: -11px;
+}
+
+.reference {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--navy-900);
+}
+
+.barcode {
+  width: 96px;
+  height: 32px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--navy-900) 0 2px,
+    transparent 2px 4px,
+    var(--navy-900) 4px 5px,
+    transparent 5px 8px,
+    var(--navy-900) 8px 11px,
+    transparent 11px 13px
+  );
+}
+
+.stamp {
+  position: absolute;
+  bottom: 14px;
+  inset-inline-end: 14px;
+  padding: 6px 14px;
+  border: 3px solid var(--green-700);
+  border-radius: 10px;
+  color: var(--green-700);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  rotate: -10deg;
+  opacity: 0.9;
+  background: rgb(255 255 255 / 0.85);
+  animation: stamp 0.5s var(--ease-out) both;
+}
+
+@keyframes fill {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes stamp {
+  from {
+    scale: 2.2;
+    opacity: 0;
+  }
+}

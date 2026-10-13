@@ -1,0 +1,27 @@
+.page {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  min-height: 100vh;
+  padding: 24px;
+  text-align: center;
+}
+
+.leaf {
+  width: 72px;
+  color: var(--red-600);
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+}
+
+.link {
+  margin-top: 12px;
+  font-weight: 700;
+  color: var(--red-600);
+}
