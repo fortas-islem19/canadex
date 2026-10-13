@@ -21,6 +21,9 @@
     "book": "Prendre rendez-vous",
     "bookShort": "Réserver"
   },
+  "intro": {
+    "skip": "Passer l'intro"
+  },
   "hero": {
     "eyebrow": "Bureau de conseil en visas canadiens · Algérie",
     "titleLead": "Votre index pour le",

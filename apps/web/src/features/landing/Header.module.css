@@ -9,6 +9,18 @@
   transition:
     border-color 0.25s,
     background 0.25s;
+  animation: headerIn 0.7s var(--ease-out) 0.05s both;
+}
+
+:global(:root[data-intro='playing']) .header {
+  animation-play-state: paused;
+}
+
+@keyframes headerIn {
+  from {
+    opacity: 0;
+    translate: 0 -100%;
+  }
 }
 
 .scrolled {
