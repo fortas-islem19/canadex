@@ -1,0 +1,140 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgb(250 248 243 / 0.72);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom: 1px solid transparent;
+  transition:
+    border-color 0.25s,
+    background 0.25s;
+}
+
+.scrolled {
+  background: rgb(250 248 243 / 0.92);
+  border-bottom-color: var(--line);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: var(--header-h);
+}
+
+.brand {
+  flex-shrink: 0;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-inline: auto;
+}
+
+.link {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-2);
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.link:hover {
+  background: var(--blue-50);
+  color: var(--navy-900);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menuButton {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--navy-900);
+}
+
+.mobileMenu {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .nav {
+    display: none;
+  }
+
+  .actions {
+    margin-inline-start: auto;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+
+  .mobileMenu {
+    display: block;
+    padding: 8px 0 24px;
+    border-top: 1px solid var(--line);
+    animation: drop 0.25s var(--ease-out);
+  }
+
+  .mobileLink {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 4px;
+    border-bottom: 1px dashed var(--line);
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy-900);
+    text-decoration: none;
+  }
+
+  .mobileLink:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .mobileIndex {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--red-600);
+  }
+}
+
+@media (max-width: 640px) {
+  .cta {
+    display: none;
+  }
+
+  .inner {
+    gap: 12px;
+  }
+
+  .brand img {
+    height: 36px;
+  }
+}
+
+@keyframes drop {
+  from {
+    opacity: 0;
+    translate: 0 -8px;
+  }
+}

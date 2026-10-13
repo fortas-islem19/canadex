@@ -1,0 +1,35 @@
+{
+  "name": "canadex",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Canadex — Canadian visa consulting office in Algeria: landing page and appointment booking system.",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,red \"npm run dev -w @canadex/api\" \"npm run dev -w @canadex/web\"",
+    "build": "npm run build -w @canadex/web && npm run build -w @canadex/api",
+    "start": "npm run start -w @canadex/api",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "concurrently": "^10.0.6",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.71.2"
+  }
+}

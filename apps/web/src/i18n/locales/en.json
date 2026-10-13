@@ -1,0 +1,588 @@
+{
+  "meta": {
+    "title": "Canadex — Canadian visa consulting office in Algeria",
+    "description": "Study, work, immigrate or visit Canada: book an appointment with Canadex, your Canadian visa consulting office in Algeria."
+  },
+  "common": {
+    "skip": "Skip to content",
+    "languageName": "English",
+    "language": "Language",
+    "close": "Close",
+    "menu": "Menu",
+    "durationMinutes": "{{count}} min"
+  },
+  "nav": {
+    "services": "Services",
+    "path": "Find your path",
+    "how": "How it works",
+    "index": "The Index",
+    "faq": "FAQ",
+    "contact": "Visit us",
+    "book": "Book an appointment",
+    "bookShort": "Book"
+  },
+  "hero": {
+    "eyebrow": "Canadian visa consulting office · Algeria",
+    "titleLead": "Your index to",
+    "titleAccent": "Canada.",
+    "lead": "Study, work, immigrate or visit — Canadex turns the maze of Canadian visas into a clear, personal plan. Book a consultation at our office and leave with a roadmap.",
+    "ctaPrimary": "Book an appointment",
+    "ctaSecondary": "Find my path",
+    "trustServices": "Study · Work · Residence · Visit",
+    "trustLanguages": "Arabic, French & English",
+    "trustHours": "{{days}} · {{hours}}"
+  },
+  "pass": {
+    "title": "Boarding pass",
+    "from": "From",
+    "to": "To",
+    "origin": "Algiers",
+    "passenger": "Passenger",
+    "you": "You",
+    "class": "Class",
+    "classes": ["Study", "Work", "Residence", "Visit"],
+    "gate": "Gate",
+    "gateValue": "Canadex office",
+    "seat": "Seat",
+    "departure": "Departure",
+    "departureValue": "When you're ready",
+    "destinations": {
+      "YUL": "Montréal",
+      "YYZ": "Toronto",
+      "YVR": "Vancouver",
+      "YOW": "Ottawa",
+      "YQB": "Québec City",
+      "YHZ": "Halifax",
+      "YYC": "Calgary"
+    }
+  },
+  "brand": {
+    "canada": "Canada",
+    "index": "Index",
+    "text": "One office that indexes everything you need to know about Canada — programs, documents, deadlines and next steps — explained in your language."
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Every Canadian pathway, indexed.",
+    "lead": "Choose what brings you to Canada. Every consultation ends with a written roadmap: the right program, the document list and the timeline.",
+    "book": "Book this consultation",
+    "names": {
+      "study": "Study in Canada",
+      "work": "Work in Canada",
+      "immigration": "Permanent residence",
+      "visit": "Visitor visa",
+      "family": "Family sponsorship",
+      "review": "File review & refusals",
+      "orientation": "Not sure yet — orientation"
+    },
+    "items": [
+      {
+        "id": "study",
+        "summary": "From choosing a program to receiving your study permit.",
+        "points": [
+          "Program and school selection (DLI)",
+          "Admission and letter of acceptance",
+          "CAQ for Québec and provincial attestation letter (PAL)",
+          "Proof of funds and study permit application"
+        ]
+      },
+      {
+        "id": "work",
+        "summary": "Find the work permit that matches your profile and your job offer.",
+        "points": [
+          "Employer-specific permits (LMIA)",
+          "Mobilité Francophone for French speakers",
+          "Open work permits for spouses",
+          "Job offer and employer verification"
+        ]
+      },
+      {
+        "id": "immigration",
+        "summary": "Build a strong profile to settle in Canada for good.",
+        "points": [
+          "Express Entry profile and CRS score",
+          "Québec immigration (Arrima, CSQ)",
+          "Provincial Nominee Programs (PNP)",
+          "Language tests and diploma assessment (ECA)"
+        ]
+      },
+      {
+        "id": "visit",
+        "summary": "Tourism, family visits or business trips — with a convincing file.",
+        "points": [
+          "Temporary resident visa (TRV)",
+          "Invitation letters and travel plan",
+          "Proof of ties to Algeria and of funds",
+          "Biometrics appointment guidance"
+        ]
+      },
+      {
+        "id": "family",
+        "summary": "Reunite with a spouse, partner, child or parent in Canada.",
+        "points": [
+          "Spouse and partner sponsorship",
+          "Dependent children",
+          "Parents and grandparents (Super Visa)",
+          "Relationship evidence and forms"
+        ]
+      },
+      {
+        "id": "review",
+        "summary": "A second pair of expert eyes before you submit — or after a refusal.",
+        "points": [
+          "Complete file check before submission",
+          "Refusal analysis and GCMS notes",
+          "Strategy to reapply",
+          "Document translation checklist"
+        ]
+      }
+    ]
+  },
+  "pathfinder": {
+    "kicker": "Pathfinder",
+    "title": "Not sure where to start?",
+    "lead": "Answer three quick questions and we'll point you to the right consultation.",
+    "progress": "Question {{current}} of {{total}}",
+    "back": "Back",
+    "restart": "Start again",
+    "questions": {
+      "goal": {
+        "label": "What brings you to Canada?",
+        "options": {
+          "study": "I want to study",
+          "work": "I want to work",
+          "settle": "I want to settle for good",
+          "visit": "I want to visit",
+          "family": "I want to join my family"
+        }
+      },
+      "language": {
+        "label": "Which languages do you speak?",
+        "options": {
+          "fr": "French",
+          "en": "English",
+          "both": "Both",
+          "none": "Still learning"
+        }
+      },
+      "education": {
+        "label": "What is your highest diploma?",
+        "options": {
+          "bac": "Baccalaureate",
+          "licence": "Bachelor (Licence)",
+          "master": "Master or higher",
+          "pro": "Vocational training"
+        }
+      }
+    },
+    "resultKicker": "Your suggested path",
+    "resultLead": "Based on your answers, start with:",
+    "tips": {
+      "french": "Speaking French is a real asset: Express Entry gives extra points for strong French, and Mobilité Francophone opens work permits outside Québec.",
+      "english": "Bilingual profiles score higher. Adding French to your English could boost your chances significantly.",
+      "learning": "Plan your language test early: TEF/TCF Canada for French, IELTS/CELPIP for English. Results drive most pathways.",
+      "degree": "Your diploma counts: we'll help you get it assessed (ECA) so it earns you points.",
+      "bac": "A Canadian college or university program can be a great first step — and may lead to a post-graduation work permit.",
+      "trade": "Skilled trades are in demand in Canada — your vocational training may open specific programs.",
+      "visit": "Visitor files are judged on your ties at home: stable job, family and funds. We'll help you document them.",
+      "family": "Sponsorship is filed by your family member in Canada — we prepare your side of the file in Algeria."
+    },
+    "book": "Book this consultation"
+  },
+  "how": {
+    "kicker": "How it works",
+    "title": "From first visit to boarding gate.",
+    "steps": [
+      {
+        "title": "Book online",
+        "text": "Choose your service, a day and a time. It takes two minutes."
+      },
+      {
+        "title": "Visit our office",
+        "text": "Meet a consultant face to face. Bring your passport, diplomas and CV."
+      },
+      {
+        "title": "Get your roadmap",
+        "text": "Leave with a clear plan: the right program, the document list and the timeline."
+      },
+      {
+        "title": "We prepare your file",
+        "text": "We help you gather and check every document, step by step, until submission."
+      }
+    ]
+  },
+  "booking": {
+    "kicker": "Booking",
+    "title": "Book your appointment",
+    "lead": "Consultations last {{minutes}} minutes. You get a reference number instantly, and we call you to confirm.",
+    "steps": ["Service", "Date & time", "Your details", "Confirm"],
+    "stepOf": "Step {{current}} of {{total}}",
+    "next": "Continue",
+    "back": "Back",
+    "service": {
+      "title": "What can we help you with?",
+      "modeTitle": "How would you like to meet?",
+      "modes": {
+        "office": "At the office",
+        "video": "Video call"
+      },
+      "modeHints": {
+        "office": "Face to face with a consultant",
+        "video": "From anywhere, on WhatsApp or Meet"
+      }
+    },
+    "schedule": {
+      "title": "Pick a day and a time",
+      "timezone": "Times are in Algeria time (UTC+1).",
+      "pickDay": "Select a day to see the available times.",
+      "noSlots": "No times left on this day.",
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "available": "Available",
+      "full": "Full",
+      "closed": "Closed",
+      "prevMonth": "Previous month",
+      "nextMonth": "Next month",
+      "loading": "Loading available times…",
+      "offline": "Live availability is not reachable right now. Pick your preferred time — we'll confirm it with you."
+    },
+    "details": {
+      "title": "Your details",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "e.g. Amina Belkacem",
+      "phone": "Phone (WhatsApp)",
+      "phonePlaceholder": "05 55 12 34 56",
+      "phoneHint": "We'll call or message you to confirm.",
+      "email": "Email (optional)",
+      "emailPlaceholder": "you@example.com",
+      "wilaya": "Wilaya / city",
+      "wilayaPlaceholder": "Start typing…",
+      "language": "Consultation language",
+      "notes": "Anything we should know? (optional)",
+      "notesPlaceholder": "e.g. I already have an admission from a university in Montréal…",
+      "consent": "I agree that Canadex may contact me about this appointment and keep my details for that purpose."
+    },
+    "review": {
+      "title": "Check your appointment",
+      "edit": "Edit",
+      "submit": "Confirm my booking",
+      "submitting": "Booking…",
+      "submitWhatsapp": "Send my request on WhatsApp",
+      "notes": "Notes"
+    },
+    "errors": {
+      "required": "This field is required.",
+      "service": "Please choose a service.",
+      "slot": "Please choose a day and a time.",
+      "name": "Please enter your full name.",
+      "phone": "Enter a valid phone number, e.g. 05 55 12 34 56.",
+      "email": "Enter a valid email address.",
+      "tooLong": "This text is too long.",
+      "consent": "Please accept to continue.",
+      "slotTaken": "Sorry, this time was just booked. Please pick another one.",
+      "rateLimited": "Too many attempts. Please try again in a few minutes.",
+      "generic": "Something went wrong. Please try again or call us."
+    },
+    "success": {
+      "title": "You're booked!",
+      "text": "We'll contact you shortly to confirm. Keep your reference number.",
+      "offlineTitle": "Almost done!",
+      "offlineText": "Send us your request on WhatsApp and we'll confirm your appointment.",
+      "reference": "Reference",
+      "calendar": "Add to calendar",
+      "whatsapp": "Send on WhatsApp",
+      "again": "Book another appointment"
+    },
+    "ticket": {
+      "title": "Consultation pass",
+      "service": "Service",
+      "date": "Date",
+      "time": "Time",
+      "passenger": "Passenger",
+      "mode": "Meeting",
+      "draft": "Draft",
+      "booked": "Booked"
+    },
+    "bring": {
+      "title": "What to bring",
+      "items": [
+        "Valid passport",
+        "Diplomas and transcripts",
+        "CV and work certificates",
+        "Language test results, if any",
+        "Previous visa decisions, if any"
+      ]
+    },
+    "whatsappMessage": "Hello Canadex! I'd like to book a consultation.\nReference: {{reference}}\nService: {{service}}\nMeeting: {{mode}}\nDate: {{date}} at {{time}}\nName: {{name}}\nPhone: {{phone}}\nWilaya: {{wilaya}}",
+    "calendarTitle": "Canadex consultation — {{service}}"
+  },
+  "glossary": {
+    "kicker": "The Index",
+    "title": "Canada's immigration words, decoded.",
+    "lead": "CAQ, CRS, LMIA… The acronyms that confuse everyone, explained in one line.",
+    "search": "Search a term…",
+    "all": "All",
+    "count": "Results: {{count}}",
+    "empty": "No term found. Ask us during your consultation!",
+    "showAll": "Show all {{count}} terms",
+    "tags": {
+      "study": "Study",
+      "work": "Work",
+      "pr": "Residence",
+      "visit": "Visit",
+      "general": "General"
+    },
+    "terms": [
+      {
+        "term": "AOR",
+        "name": "Acknowledgement of Receipt",
+        "def": "Confirmation from IRCC that your application was received and processing has started.",
+        "tag": "general"
+      },
+      {
+        "term": "Arrima",
+        "name": "Québec's immigration portal",
+        "def": "The Québec government platform where skilled workers submit an expression of interest to immigrate to Québec.",
+        "tag": "pr"
+      },
+      {
+        "term": "Biometrics",
+        "name": "Fingerprints & photo",
+        "def": "Fingerprints and a photo taken at an official Visa Application Centre (VAC); required for most visa and permit applications.",
+        "tag": "general"
+      },
+      {
+        "term": "CAQ",
+        "name": "Québec Acceptance Certificate",
+        "def": "A document issued by Québec that you need before applying for a study permit to study there.",
+        "tag": "study"
+      },
+      {
+        "term": "CLB",
+        "name": "Canadian Language Benchmarks",
+        "def": "The scale that converts your test scores (IELTS, CELPIP, TEF, TCF…) into a level from 1 to 12.",
+        "tag": "pr"
+      },
+      {
+        "term": "CRS",
+        "name": "Comprehensive Ranking System",
+        "def": "The points system (out of 1,200) that ranks Express Entry candidates by age, education, language and experience.",
+        "tag": "pr"
+      },
+      {
+        "term": "CSQ",
+        "name": "Québec Selection Certificate",
+        "def": "Proof that Québec has selected you as an immigrant, before the federal permanent residence application.",
+        "tag": "pr"
+      },
+      {
+        "term": "DLI",
+        "name": "Designated Learning Institution",
+        "def": "A school approved to host international students. Your school must be a DLI for you to get a study permit.",
+        "tag": "study"
+      },
+      {
+        "term": "ECA",
+        "name": "Educational Credential Assessment",
+        "def": "A report (e.g. from WES) confirming your Algerian diploma is valid and equivalent to a Canadian one.",
+        "tag": "pr"
+      },
+      {
+        "term": "Express Entry",
+        "name": "Federal skilled immigration system",
+        "def": "IRCC's online system for skilled-worker permanent residence: the best-ranked profiles are invited to apply.",
+        "tag": "pr"
+      },
+      {
+        "term": "GCMS",
+        "name": "Global Case Management System notes",
+        "def": "The officer's internal notes on your file. Requesting them is the best way to understand a refusal.",
+        "tag": "general"
+      },
+      {
+        "term": "IELTS",
+        "name": "English language test",
+        "def": "An English test accepted by IRCC — the General Training version for immigration.",
+        "tag": "pr"
+      },
+      {
+        "term": "IRCC",
+        "name": "Immigration, Refugees and Citizenship Canada",
+        "def": "The Government of Canada department that decides on visas, permits and permanent residence.",
+        "tag": "general"
+      },
+      {
+        "term": "LMIA",
+        "name": "Labour Market Impact Assessment",
+        "def": "An approval an employer may need to show that hiring a foreign worker won't hurt the Canadian job market.",
+        "tag": "work"
+      },
+      {
+        "term": "LOA",
+        "name": "Letter of Acceptance",
+        "def": "The official admission letter from your Canadian school, needed for the study permit.",
+        "tag": "study"
+      },
+      {
+        "term": "Mobilité Francophone",
+        "name": "Francophone mobility program",
+        "def": "A work permit stream for French speakers with a job offer outside Québec — no LMIA needed.",
+        "tag": "work"
+      },
+      {
+        "term": "NOC",
+        "name": "National Occupational Classification",
+        "def": "Canada's job classification. Your occupation's NOC code and TEER level shape your eligibility.",
+        "tag": "work"
+      },
+      {
+        "term": "PAL",
+        "name": "Provincial Attestation Letter",
+        "def": "A letter from the province confirming your place under the study permit cap; required for most new students.",
+        "tag": "study"
+      },
+      {
+        "term": "PGWP",
+        "name": "Post-Graduation Work Permit",
+        "def": "An open work permit that may let eligible graduates of Canadian programs work after their studies.",
+        "tag": "study"
+      },
+      {
+        "term": "PNP",
+        "name": "Provincial Nominee Program",
+        "def": "Each province can nominate immigrants who match its own labour needs.",
+        "tag": "pr"
+      },
+      {
+        "term": "PR",
+        "name": "Permanent Residence",
+        "def": "The status that lets you live, work and study anywhere in Canada — and later apply for citizenship.",
+        "tag": "pr"
+      },
+      {
+        "term": "Proof of funds",
+        "name": "Financial evidence",
+        "def": "Bank statements and documents showing you can support yourself (and your family) in Canada.",
+        "tag": "general"
+      },
+      {
+        "term": "Super Visa",
+        "name": "Parents & grandparents visa",
+        "def": "A long-term visitor visa letting parents and grandparents of Canadians stay up to 5 years per visit.",
+        "tag": "visit"
+      },
+      {
+        "term": "TEF / TCF",
+        "name": "French language tests",
+        "def": "TEF Canada and TCF Canada: French tests accepted by IRCC and Québec. A strong score is a major asset.",
+        "tag": "pr"
+      },
+      {
+        "term": "TRV",
+        "name": "Temporary Resident Visa",
+        "def": "The visa Algerian citizens need to travel to Canada as visitors, students or workers.",
+        "tag": "visit"
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Questions we hear every day.",
+    "more": "Another question? Ask us on WhatsApp.",
+    "items": [
+      {
+        "q": "Is Canadex part of the Canadian government?",
+        "a": "No. Canadex is an independent consulting office in Algeria. Decisions are made only by IRCC and the Canadian authorities, and government fees are always paid directly to them."
+      },
+      {
+        "q": "Can you guarantee my visa?",
+        "a": "Nobody can honestly guarantee a visa. What we guarantee is a complete, coherent and well-documented file that gives you the best possible chance."
+      },
+      {
+        "q": "What should I bring to my first appointment?",
+        "a": "Your passport, diplomas and transcripts, CV, and any language test results or previous visa decisions. Copies are fine for the first meeting."
+      },
+      {
+        "q": "Do I need to speak French or English?",
+        "a": "For most study, work and immigration programs, yes — and speaking both is a strong advantage. We'll tell you which test to take and the level to aim for."
+      },
+      {
+        "q": "Can I book for a family member?",
+        "a": "Yes. Enter their name and your phone number, and mention it in the notes. Families planning to move together can come to the same appointment."
+      },
+      {
+        "q": "How do I cancel or change my appointment?",
+        "a": "Call us or message us on WhatsApp with your reference number, ideally 24 hours in advance so someone else can take the slot."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Visit us",
+    "title": "Come and see us.",
+    "lead": "Walk in with questions, walk out with a plan.",
+    "address": "Address",
+    "hours": "Opening hours",
+    "closed": "{{days}}: closed",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "directions": "Get directions",
+    "byAppointment": "Visits by appointment — book online in two minutes."
+  },
+  "footer": {
+    "tagline": "Canadian visa consulting office in Algeria.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "official": "Official sources",
+    "officialIrcc": "IRCC — canada.ca",
+    "officialIrccUrl": "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+    "officialQuebec": "Immigration Québec",
+    "officialQuebecUrl": "https://www.quebec.ca/en/immigration",
+    "disclaimer": "Canadex is an independent, private consulting office. We are not affiliated with the Government of Canada, IRCC or any Canadian embassy. Official information is available on canada.ca.",
+    "rights": "© {{year}} Canadex. All rights reserved."
+  },
+  "admin": {
+    "title": "Bookings",
+    "subtitle": "Canadex back-office",
+    "tokenLabel": "Admin token",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "invalidToken": "Invalid token.",
+    "disabled": "The back-office is disabled: set ADMIN_TOKEN on the API server.",
+    "search": "Search name, phone, reference…",
+    "allStatuses": "All statuses",
+    "from": "From",
+    "to": "To",
+    "refresh": "Refresh",
+    "export": "Export CSV",
+    "empty": "No bookings match these filters.",
+    "loadError": "Could not load bookings.",
+    "back": "Back to the website",
+    "stats": {
+      "today": "Today",
+      "upcoming": "Upcoming",
+      "toConfirm": "To confirm"
+    },
+    "columns": {
+      "reference": "Reference",
+      "when": "When",
+      "service": "Service",
+      "client": "Client",
+      "wilaya": "Wilaya",
+      "language": "Lang.",
+      "notes": "Notes",
+      "status": "Status"
+    },
+    "statuses": {
+      "new": "New",
+      "confirmed": "Confirmed",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "no_show": "No-show"
+    }
+  },
+  "notFound": {
+    "title": "This page took another flight.",
+    "back": "Back to home"
+  }
+}

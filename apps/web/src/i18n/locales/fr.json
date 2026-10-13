@@ -1,0 +1,588 @@
+{
+  "meta": {
+    "title": "Canadex — Bureau de conseil en visas canadiens en Algérie",
+    "description": "Études, travail, immigration ou visite au Canada : prenez rendez-vous chez Canadex, votre bureau de conseil en visas canadiens en Algérie."
+  },
+  "common": {
+    "skip": "Aller au contenu",
+    "languageName": "Français",
+    "language": "Langue",
+    "close": "Fermer",
+    "menu": "Menu",
+    "durationMinutes": "{{count}} min"
+  },
+  "nav": {
+    "services": "Services",
+    "path": "Trouver ma voie",
+    "how": "Comment ça marche",
+    "index": "L'Index",
+    "faq": "FAQ",
+    "contact": "Nous rendre visite",
+    "book": "Prendre rendez-vous",
+    "bookShort": "Réserver"
+  },
+  "hero": {
+    "eyebrow": "Bureau de conseil en visas canadiens · Algérie",
+    "titleLead": "Votre index pour le",
+    "titleAccent": "Canada.",
+    "lead": "Études, travail, immigration ou visite — Canadex transforme le labyrinthe des visas canadiens en un plan clair et personnalisé. Prenez rendez-vous à notre bureau et repartez avec votre feuille de route.",
+    "ctaPrimary": "Prendre rendez-vous",
+    "ctaSecondary": "Trouver ma voie",
+    "trustServices": "Études · Travail · Résidence · Visite",
+    "trustLanguages": "Arabe, français et anglais",
+    "trustHours": "{{days}} · {{hours}}"
+  },
+  "pass": {
+    "title": "Carte d'embarquement",
+    "from": "De",
+    "to": "À",
+    "origin": "Alger",
+    "passenger": "Passager",
+    "you": "Vous",
+    "class": "Classe",
+    "classes": ["Études", "Travail", "Résidence", "Visite"],
+    "gate": "Porte",
+    "gateValue": "Bureau Canadex",
+    "seat": "Siège",
+    "departure": "Départ",
+    "departureValue": "Quand vous êtes prêt",
+    "destinations": {
+      "YUL": "Montréal",
+      "YYZ": "Toronto",
+      "YVR": "Vancouver",
+      "YOW": "Ottawa",
+      "YQB": "Québec",
+      "YHZ": "Halifax",
+      "YYC": "Calgary"
+    }
+  },
+  "brand": {
+    "canada": "Canada",
+    "index": "Index",
+    "text": "Un seul bureau qui répertorie tout ce qu'il faut savoir sur le Canada — programmes, documents, délais et prochaines étapes — expliqué dans votre langue."
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Chaque voie vers le Canada, répertoriée.",
+    "lead": "Choisissez ce qui vous mène au Canada. Chaque consultation se termine par une feuille de route écrite : le bon programme, la liste des documents et le calendrier.",
+    "book": "Réserver cette consultation",
+    "names": {
+      "study": "Étudier au Canada",
+      "work": "Travailler au Canada",
+      "immigration": "Résidence permanente",
+      "visit": "Visa visiteur",
+      "family": "Parrainage familial",
+      "review": "Revue de dossier et refus",
+      "orientation": "Pas encore sûr — orientation"
+    },
+    "items": [
+      {
+        "id": "study",
+        "summary": "Du choix du programme jusqu'à l'obtention du permis d'études.",
+        "points": [
+          "Choix du programme et de l'établissement (EED)",
+          "Admission et lettre d'acceptation",
+          "CAQ pour le Québec et lettre d'attestation provinciale (LAP)",
+          "Preuve de fonds et demande de permis d'études"
+        ]
+      },
+      {
+        "id": "work",
+        "summary": "Trouvez le permis de travail adapté à votre profil et à votre offre d'emploi.",
+        "points": [
+          "Permis lié à un employeur (EIMT)",
+          "Mobilité francophone pour les francophones",
+          "Permis de travail ouvert pour conjoints",
+          "Vérification de l'offre d'emploi et de l'employeur"
+        ]
+      },
+      {
+        "id": "immigration",
+        "summary": "Construisez un profil solide pour vous installer durablement au Canada.",
+        "points": [
+          "Profil Entrée express et score SCG",
+          "Immigration au Québec (Arrima, CSQ)",
+          "Programmes des candidats des provinces (PCP)",
+          "Tests de langue et évaluation des diplômes (EDE)"
+        ]
+      },
+      {
+        "id": "visit",
+        "summary": "Tourisme, visite familiale ou voyage d'affaires — avec un dossier convaincant.",
+        "points": [
+          "Visa de résident temporaire (VRT)",
+          "Lettres d'invitation et plan de voyage",
+          "Preuves d'attaches en Algérie et de fonds",
+          "Accompagnement pour la biométrie"
+        ]
+      },
+      {
+        "id": "family",
+        "summary": "Rejoignez votre conjoint, votre enfant ou vos parents au Canada.",
+        "points": [
+          "Parrainage du conjoint ou partenaire",
+          "Enfants à charge",
+          "Parents et grands-parents (Super visa)",
+          "Preuves de la relation et formulaires"
+        ]
+      },
+      {
+        "id": "review",
+        "summary": "Un regard expert avant le dépôt — ou après un refus.",
+        "points": [
+          "Vérification complète avant dépôt",
+          "Analyse du refus et notes SMGC",
+          "Stratégie pour une nouvelle demande",
+          "Liste des documents à traduire"
+        ]
+      }
+    ]
+  },
+  "pathfinder": {
+    "kicker": "Orientation",
+    "title": "Vous ne savez pas par où commencer ?",
+    "lead": "Répondez à trois questions et nous vous orientons vers la bonne consultation.",
+    "progress": "Question {{current}} sur {{total}}",
+    "back": "Retour",
+    "restart": "Recommencer",
+    "questions": {
+      "goal": {
+        "label": "Qu'est-ce qui vous attire au Canada ?",
+        "options": {
+          "study": "Je veux étudier",
+          "work": "Je veux travailler",
+          "settle": "Je veux m'installer définitivement",
+          "visit": "Je veux visiter",
+          "family": "Je veux rejoindre ma famille"
+        }
+      },
+      "language": {
+        "label": "Quelles langues parlez-vous ?",
+        "options": {
+          "fr": "Français",
+          "en": "Anglais",
+          "both": "Les deux",
+          "none": "En apprentissage"
+        }
+      },
+      "education": {
+        "label": "Quel est votre plus haut diplôme ?",
+        "options": {
+          "bac": "Baccalauréat",
+          "licence": "Licence",
+          "master": "Master ou plus",
+          "pro": "Formation professionnelle"
+        }
+      }
+    },
+    "resultKicker": "Votre parcours suggéré",
+    "resultLead": "D'après vos réponses, commencez par :",
+    "tips": {
+      "french": "Parler français est un vrai atout : Entrée express accorde des points supplémentaires pour un bon niveau de français, et Mobilité francophone ouvre des permis de travail hors Québec.",
+      "english": "Les profils bilingues obtiennent plus de points. Ajouter le français à votre anglais peut nettement augmenter vos chances.",
+      "learning": "Planifiez votre test de langue tôt : TEF/TCF Canada pour le français, IELTS/CELPIP pour l'anglais. Les résultats comptent dans la plupart des parcours.",
+      "degree": "Votre diplôme compte : nous vous aidons à le faire évaluer (EDE) pour qu'il vous rapporte des points.",
+      "bac": "Un programme collégial ou universitaire canadien peut être une excellente première étape — et mener à un permis de travail postdiplôme.",
+      "trade": "Les métiers spécialisés sont recherchés au Canada — votre formation professionnelle peut ouvrir des programmes spécifiques.",
+      "visit": "Une demande de visa visiteur est évaluée sur vos attaches : emploi stable, famille et fonds. Nous vous aidons à les documenter.",
+      "family": "Le parrainage est déposé par votre proche au Canada — nous préparons votre partie du dossier en Algérie."
+    },
+    "book": "Réserver cette consultation"
+  },
+  "how": {
+    "kicker": "Comment ça marche",
+    "title": "De la première visite à la porte d'embarquement.",
+    "steps": [
+      {
+        "title": "Réservez en ligne",
+        "text": "Choisissez le service, le jour et l'heure. Deux minutes suffisent."
+      },
+      {
+        "title": "Venez au bureau",
+        "text": "Rencontrez un conseiller en personne. Apportez passeport, diplômes et CV."
+      },
+      {
+        "title": "Recevez votre feuille de route",
+        "text": "Repartez avec un plan clair : le bon programme, la liste des documents et le calendrier."
+      },
+      {
+        "title": "Nous préparons votre dossier",
+        "text": "Nous vous aidons à réunir et vérifier chaque document, étape par étape, jusqu'au dépôt."
+      }
+    ]
+  },
+  "booking": {
+    "kicker": "Rendez-vous",
+    "title": "Réservez votre rendez-vous",
+    "lead": "Les consultations durent {{minutes}} minutes. Vous recevez un numéro de référence immédiatement, puis nous vous appelons pour confirmer.",
+    "steps": ["Service", "Date et heure", "Vos coordonnées", "Confirmation"],
+    "stepOf": "Étape {{current}} sur {{total}}",
+    "next": "Continuer",
+    "back": "Retour",
+    "service": {
+      "title": "Comment pouvons-nous vous aider ?",
+      "modeTitle": "Comment souhaitez-vous nous rencontrer ?",
+      "modes": {
+        "office": "Au bureau",
+        "video": "Appel vidéo"
+      },
+      "modeHints": {
+        "office": "En face à face avec un conseiller",
+        "video": "D'où vous voulez, sur WhatsApp ou Meet"
+      }
+    },
+    "schedule": {
+      "title": "Choisissez un jour et une heure",
+      "timezone": "Heures affichées à l'heure d'Algérie (UTC+1).",
+      "pickDay": "Sélectionnez un jour pour voir les horaires disponibles.",
+      "noSlots": "Plus de créneaux disponibles ce jour-là.",
+      "morning": "Matin",
+      "afternoon": "Après-midi",
+      "available": "Disponible",
+      "full": "Complet",
+      "closed": "Fermé",
+      "prevMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "loading": "Chargement des disponibilités…",
+      "offline": "Les disponibilités en direct sont momentanément inaccessibles. Choisissez votre horaire préféré — nous le confirmerons avec vous."
+    },
+    "details": {
+      "title": "Vos coordonnées",
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Ex. : Amina Belkacem",
+      "phone": "Téléphone (WhatsApp)",
+      "phonePlaceholder": "05 55 12 34 56",
+      "phoneHint": "Nous vous appellerons ou vous écrirons pour confirmer.",
+      "email": "E-mail (facultatif)",
+      "emailPlaceholder": "vous@exemple.com",
+      "wilaya": "Wilaya / ville",
+      "wilayaPlaceholder": "Commencez à taper…",
+      "language": "Langue de la consultation",
+      "notes": "Quelque chose à nous dire ? (facultatif)",
+      "notesPlaceholder": "Ex. : j'ai déjà une admission dans une université à Montréal…",
+      "consent": "J'accepte que Canadex me contacte au sujet de ce rendez-vous et conserve mes informations à cette fin."
+    },
+    "review": {
+      "title": "Vérifiez votre rendez-vous",
+      "edit": "Modifier",
+      "submit": "Confirmer ma réservation",
+      "submitting": "Réservation…",
+      "submitWhatsapp": "Envoyer ma demande sur WhatsApp",
+      "notes": "Remarques"
+    },
+    "errors": {
+      "required": "Ce champ est obligatoire.",
+      "service": "Veuillez choisir un service.",
+      "slot": "Veuillez choisir un jour et une heure.",
+      "name": "Veuillez saisir votre nom complet.",
+      "phone": "Saisissez un numéro valide, ex. : 05 55 12 34 56.",
+      "email": "Saisissez une adresse e-mail valide.",
+      "tooLong": "Ce texte est trop long.",
+      "consent": "Veuillez accepter pour continuer.",
+      "slotTaken": "Désolé, ce créneau vient d'être réservé. Veuillez en choisir un autre.",
+      "rateLimited": "Trop de tentatives. Réessayez dans quelques minutes.",
+      "generic": "Une erreur est survenue. Réessayez ou appelez-nous."
+    },
+    "success": {
+      "title": "C'est réservé !",
+      "text": "Nous vous contacterons rapidement pour confirmer. Conservez votre numéro de référence.",
+      "offlineTitle": "Presque terminé !",
+      "offlineText": "Envoyez-nous votre demande sur WhatsApp et nous confirmerons votre rendez-vous.",
+      "reference": "Référence",
+      "calendar": "Ajouter au calendrier",
+      "whatsapp": "Envoyer sur WhatsApp",
+      "again": "Prendre un autre rendez-vous"
+    },
+    "ticket": {
+      "title": "Pass consultation",
+      "service": "Service",
+      "date": "Date",
+      "time": "Heure",
+      "passenger": "Passager",
+      "mode": "Rencontre",
+      "draft": "Brouillon",
+      "booked": "Réservé"
+    },
+    "bring": {
+      "title": "À apporter",
+      "items": [
+        "Passeport valide",
+        "Diplômes et relevés de notes",
+        "CV et attestations de travail",
+        "Résultats de tests de langue, s'il y en a",
+        "Anciennes décisions de visa, le cas échéant"
+      ]
+    },
+    "whatsappMessage": "Bonjour Canadex ! Je souhaite réserver une consultation.\nRéférence : {{reference}}\nService : {{service}}\nRencontre : {{mode}}\nDate : {{date}} à {{time}}\nNom : {{name}}\nTéléphone : {{phone}}\nWilaya : {{wilaya}}",
+    "calendarTitle": "Consultation Canadex — {{service}}"
+  },
+  "glossary": {
+    "kicker": "L'Index",
+    "title": "Le vocabulaire de l'immigration, décodé.",
+    "lead": "CAQ, SCG, EIMT… Les sigles qui embrouillent tout le monde, expliqués en une ligne.",
+    "search": "Rechercher un terme…",
+    "all": "Tout",
+    "count": "Résultats : {{count}}",
+    "empty": "Aucun terme trouvé. Posez-nous la question en consultation !",
+    "showAll": "Afficher les {{count}} termes",
+    "tags": {
+      "study": "Études",
+      "work": "Travail",
+      "pr": "Résidence",
+      "visit": "Visite",
+      "general": "Général"
+    },
+    "terms": [
+      {
+        "term": "AR",
+        "name": "Accusé de réception",
+        "def": "Confirmation d'IRCC que votre demande a été reçue et que son traitement a commencé.",
+        "tag": "general"
+      },
+      {
+        "term": "Arrima",
+        "name": "Portail d'immigration du Québec",
+        "def": "La plateforme du gouvernement du Québec où les travailleurs qualifiés déposent une déclaration d'intérêt pour immigrer au Québec.",
+        "tag": "pr"
+      },
+      {
+        "term": "Biométrie",
+        "name": "Empreintes et photo",
+        "def": "Empreintes digitales et photo prises dans un centre de réception des demandes de visa (CRDV) ; exigées pour la plupart des demandes.",
+        "tag": "general"
+      },
+      {
+        "term": "CAQ",
+        "name": "Certificat d'acceptation du Québec",
+        "def": "Document délivré par le Québec, nécessaire avant de demander un permis d'études pour y étudier.",
+        "tag": "study"
+      },
+      {
+        "term": "NCLC",
+        "name": "Niveaux de compétence linguistique canadiens",
+        "def": "L'échelle qui convertit vos résultats de test (TEF, TCF, IELTS, CELPIP…) en niveau de 1 à 12.",
+        "tag": "pr"
+      },
+      {
+        "term": "SCG",
+        "name": "Système de classement global",
+        "def": "Le système de points (sur 1 200) qui classe les candidats d'Entrée express selon l'âge, les études, la langue et l'expérience.",
+        "tag": "pr"
+      },
+      {
+        "term": "CSQ",
+        "name": "Certificat de sélection du Québec",
+        "def": "La preuve que le Québec vous a sélectionné comme immigrant, avant la demande fédérale de résidence permanente.",
+        "tag": "pr"
+      },
+      {
+        "term": "EED",
+        "name": "Établissement d'enseignement désigné",
+        "def": "Un établissement autorisé à accueillir des étudiants étrangers. Il doit être un EED pour que vous obteniez un permis d'études.",
+        "tag": "study"
+      },
+      {
+        "term": "EDE",
+        "name": "Évaluation des diplômes d'études",
+        "def": "Un rapport (par ex. de WES) qui confirme que votre diplôme algérien est valide et équivalent à un diplôme canadien.",
+        "tag": "pr"
+      },
+      {
+        "term": "Entrée express",
+        "name": "Système fédéral d'immigration qualifiée",
+        "def": "Le système en ligne d'IRCC pour la résidence permanente des travailleurs qualifiés : les profils les mieux classés sont invités à présenter une demande.",
+        "tag": "pr"
+      },
+      {
+        "term": "SMGC",
+        "name": "Notes du Système mondial de gestion des cas",
+        "def": "Les notes internes de l'agent sur votre dossier. Les demander est le meilleur moyen de comprendre un refus.",
+        "tag": "general"
+      },
+      {
+        "term": "IELTS",
+        "name": "Test d'anglais",
+        "def": "Un test d'anglais reconnu par IRCC — la version General Training pour l'immigration.",
+        "tag": "pr"
+      },
+      {
+        "term": "IRCC",
+        "name": "Immigration, Réfugiés et Citoyenneté Canada",
+        "def": "Le ministère du gouvernement du Canada qui statue sur les visas, les permis et la résidence permanente.",
+        "tag": "general"
+      },
+      {
+        "term": "EIMT",
+        "name": "Étude d'impact sur le marché du travail",
+        "def": "Une approbation dont un employeur peut avoir besoin pour montrer qu'embaucher un travailleur étranger ne nuit pas au marché du travail canadien.",
+        "tag": "work"
+      },
+      {
+        "term": "LOA",
+        "name": "Lettre d'acceptation",
+        "def": "La lettre d'admission officielle de votre établissement canadien, nécessaire pour le permis d'études.",
+        "tag": "study"
+      },
+      {
+        "term": "Mobilité francophone",
+        "name": "Programme de mobilité francophone",
+        "def": "Un volet de permis de travail pour les francophones ayant une offre d'emploi hors Québec — sans EIMT.",
+        "tag": "work"
+      },
+      {
+        "term": "CNP",
+        "name": "Classification nationale des professions",
+        "def": "La classification canadienne des emplois. Le code CNP et le niveau FEER de votre métier déterminent votre admissibilité.",
+        "tag": "work"
+      },
+      {
+        "term": "LAP",
+        "name": "Lettre d'attestation provinciale",
+        "def": "Une lettre de la province confirmant votre place dans le plafond des permis d'études ; exigée pour la plupart des nouveaux étudiants.",
+        "tag": "study"
+      },
+      {
+        "term": "PTPD",
+        "name": "Permis de travail postdiplôme",
+        "def": "Un permis de travail ouvert qui peut permettre aux diplômés admissibles de programmes canadiens de travailler après leurs études.",
+        "tag": "study"
+      },
+      {
+        "term": "PCP",
+        "name": "Programme des candidats des provinces",
+        "def": "Chaque province peut désigner des immigrants qui répondent à ses propres besoins de main-d'œuvre.",
+        "tag": "pr"
+      },
+      {
+        "term": "RP",
+        "name": "Résidence permanente",
+        "def": "Le statut qui permet de vivre, travailler et étudier partout au Canada — puis de demander la citoyenneté.",
+        "tag": "pr"
+      },
+      {
+        "term": "Preuve de fonds",
+        "name": "Capacité financière",
+        "def": "Relevés bancaires et documents prouvant que vous pouvez subvenir à vos besoins (et à ceux de votre famille) au Canada.",
+        "tag": "general"
+      },
+      {
+        "term": "Super visa",
+        "name": "Visa pour parents et grands-parents",
+        "def": "Un visa de visiteur de longue durée permettant aux parents et grands-parents de Canadiens de séjourner jusqu'à 5 ans par visite.",
+        "tag": "visit"
+      },
+      {
+        "term": "TEF / TCF",
+        "name": "Tests de français",
+        "def": "TEF Canada et TCF Canada : tests de français reconnus par IRCC et le Québec. Un bon score est un atout majeur.",
+        "tag": "pr"
+      },
+      {
+        "term": "VRT",
+        "name": "Visa de résident temporaire",
+        "def": "Le visa dont les citoyens algériens ont besoin pour se rendre au Canada comme visiteurs, étudiants ou travailleurs.",
+        "tag": "visit"
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Les questions qu'on nous pose chaque jour.",
+    "more": "Une autre question ? Écrivez-nous sur WhatsApp.",
+    "items": [
+      {
+        "q": "Canadex fait-il partie du gouvernement canadien ?",
+        "a": "Non. Canadex est un bureau de conseil indépendant en Algérie. Les décisions relèvent uniquement d'IRCC et des autorités canadiennes, et les frais gouvernementaux leur sont toujours payés directement."
+      },
+      {
+        "q": "Pouvez-vous garantir mon visa ?",
+        "a": "Personne ne peut honnêtement garantir un visa. Ce que nous garantissons, c'est un dossier complet, cohérent et bien documenté qui vous donne les meilleures chances."
+      },
+      {
+        "q": "Que dois-je apporter au premier rendez-vous ?",
+        "a": "Votre passeport, vos diplômes et relevés de notes, votre CV, ainsi que vos résultats de tests de langue ou anciennes décisions de visa. Des copies suffisent pour le premier rendez-vous."
+      },
+      {
+        "q": "Dois-je parler français ou anglais ?",
+        "a": "Pour la plupart des programmes d'études, de travail et d'immigration, oui — et parler les deux est un avantage important. Nous vous indiquons quel test passer et le niveau à viser."
+      },
+      {
+        "q": "Puis-je réserver pour un proche ?",
+        "a": "Oui. Indiquez son nom et votre numéro de téléphone, et précisez-le dans les remarques. Les familles qui partent ensemble peuvent venir au même rendez-vous."
+      },
+      {
+        "q": "Comment annuler ou modifier mon rendez-vous ?",
+        "a": "Appelez-nous ou écrivez-nous sur WhatsApp avec votre numéro de référence, idéalement 24 heures à l'avance pour libérer le créneau."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Nous rendre visite",
+    "title": "Venez nous voir.",
+    "lead": "Entrez avec vos questions, repartez avec un plan.",
+    "address": "Adresse",
+    "hours": "Horaires",
+    "closed": "{{days}} : fermé",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "directions": "Itinéraire",
+    "byAppointment": "Visites sur rendez-vous — réservez en ligne en deux minutes."
+  },
+  "footer": {
+    "tagline": "Bureau de conseil en visas canadiens en Algérie.",
+    "explore": "Explorer",
+    "contact": "Contact",
+    "official": "Sources officielles",
+    "officialIrcc": "IRCC — canada.ca",
+    "officialIrccUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete.html",
+    "officialQuebec": "Immigration Québec",
+    "officialQuebecUrl": "https://www.quebec.ca/immigration",
+    "disclaimer": "Canadex est un bureau de conseil privé et indépendant. Nous ne sommes affiliés ni au gouvernement du Canada, ni à IRCC, ni à aucune ambassade canadienne. L'information officielle est disponible sur canada.ca.",
+    "rights": "© {{year}} Canadex. Tous droits réservés."
+  },
+  "admin": {
+    "title": "Rendez-vous",
+    "subtitle": "Espace bureau Canadex",
+    "tokenLabel": "Jeton d'administration",
+    "signIn": "Se connecter",
+    "signOut": "Se déconnecter",
+    "invalidToken": "Jeton invalide.",
+    "disabled": "L'espace bureau est désactivé : définissez ADMIN_TOKEN sur le serveur de l'API.",
+    "search": "Rechercher nom, téléphone, référence…",
+    "allStatuses": "Tous les statuts",
+    "from": "Du",
+    "to": "Au",
+    "refresh": "Actualiser",
+    "export": "Exporter en CSV",
+    "empty": "Aucun rendez-vous ne correspond à ces filtres.",
+    "loadError": "Impossible de charger les rendez-vous.",
+    "back": "Retour au site",
+    "stats": {
+      "today": "Aujourd'hui",
+      "upcoming": "À venir",
+      "toConfirm": "À confirmer"
+    },
+    "columns": {
+      "reference": "Référence",
+      "when": "Quand",
+      "service": "Service",
+      "client": "Client",
+      "wilaya": "Wilaya",
+      "language": "Langue",
+      "notes": "Remarques",
+      "status": "Statut"
+    },
+    "statuses": {
+      "new": "Nouveau",
+      "confirmed": "Confirmé",
+      "completed": "Terminé",
+      "cancelled": "Annulé",
+      "no_show": "Absent"
+    }
+  },
+  "notFound": {
+    "title": "Cette page a pris un autre vol.",
+    "back": "Retour à l'accueil"
+  }
+}

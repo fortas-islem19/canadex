@@ -1,0 +1,57 @@
+/* Canadex design tokens — colours sampled from the logo. */
+:root {
+  color-scheme: light;
+
+  --navy-950: #061631;
+  --navy-900: #0a2148;
+  --navy-800: #0f2e5e;
+  --blue-700: #0b4a80;
+  --blue-600: #1560a3;
+  --blue-100: #e4edf8;
+  --blue-50: #f1f6fc;
+
+  --red-700: #a8111a;
+  --red-600: #c8161f;
+  --red-500: #e3262f;
+  --red-100: #fde4e3;
+  --red-50: #fef3f2;
+
+  --green-700: #006233;
+  --green-100: #ddf1e5;
+
+  --gold-500: #e9a23b;
+
+  --paper: #faf8f3;
+  --paper-2: #f3efe6;
+  --surface: #ffffff;
+  --ink: #0b1b36;
+  --ink-2: #33415c;
+  --muted: #5d6a82;
+  --line: #e4e1d8;
+  --line-strong: #cfd6e3;
+
+  --font-display: 'Montserrat', 'Cairo', system-ui, sans-serif;
+  --font-body: 'Manrope', 'Cairo', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  --shadow-sm: 0 1px 2px rgb(10 33 72 / 0.06), 0 1px 1px rgb(10 33 72 / 0.04);
+  --shadow: 0 12px 32px -12px rgb(10 33 72 / 0.18), 0 2px 6px rgb(10 33 72 / 0.06);
+  --shadow-lg: 0 30px 60px -20px rgb(10 33 72 / 0.35), 0 8px 20px -8px rgb(10 33 72 / 0.15);
+
+  --container: 1200px;
+  --gutter: clamp(16px, 4vw, 32px);
+  --header-h: 72px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Arabic typography: Cairo everywhere, slightly larger for legibility. */
+:root[lang='ar'] {
+  --font-display: 'Cairo', system-ui, sans-serif;
+  --font-body: 'Cairo', system-ui, sans-serif;
+}
